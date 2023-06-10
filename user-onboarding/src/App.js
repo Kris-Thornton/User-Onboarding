@@ -94,7 +94,7 @@ function App() {
 
   return (
     <div >
-      <header style={{ backgroundColor: 'lightcoral' }}><h1>Welcome New Users!</h1></header>
+      <header style={{ backgroundColor: 'lightblue' }}><h1>Welcome New Users!</h1></header>
       <form onSubmit={handleSubmit}>
         <h2 >Please enter your first and last name.</h2>
         <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-around', backgroundColor: 'lightgrey', fontWeight: 'bold', rowGap: '10px' }}>
@@ -127,7 +127,7 @@ function App() {
       {members.map(user => {
         
         return (
-          <div key={user.id}style={{display:'flex', flexDirection: 'column', backgroundColor: 'lightcoral', border: '.3rem solid black'}}>
+          <div key={user.id}style={{display:'flex', flexDirection: 'column', backgroundColor: 'lightblue', border: '.3rem solid black'}}>
             <h3>Member{user.id}</h3>
             First Name:
             <h4>{user.firstname}</h4>
