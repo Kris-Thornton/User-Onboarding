@@ -14,7 +14,8 @@ describe('My First Test', () => {
 
     cy.get('button').click()
     
-    cy.get('form').invoke('val', '')
+    // cy.get('form').invoke('val', '')
+    cy.get("input[name=firstname]").should('have.value', '');
 
     // cy.contains('type').click()
 
